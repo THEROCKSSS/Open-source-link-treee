@@ -1,0 +1,507 @@
+{
+  "version": "1.0.0",
+  "description": "Platform icons and metadata for Futuristic Link Tree",
+  "platforms": [
+    {
+      "id": "twitter",
+      "name": "Twitter/X",
+      "url": "https://twitter.com",
+      "category": "social",
+      "icon": "twitter.svg",
+      "color": "#1DA1F2",
+      "description": "X (formerly Twitter)"
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "url": "https://instagram.com",
+      "category": "social",
+      "icon": "instagram.svg",
+      "color": "#E4405F",
+      "description": "Instagram photo sharing"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "url": "https://youtube.com",
+      "category": "video",
+      "icon": "youtube.svg",
+      "color": "#FF0000",
+      "description": "YouTube video platform"
+    },
+    {
+      "id": "twitch",
+      "name": "Twitch",
+      "url": "https://twitch.tv",
+      "category": "streaming",
+      "icon": "twitch.svg",
+      "color": "#9146FF",
+      "description": "Twitch live streaming"
+    },
+    {
+      "id": "tiktok",
+      "name": "TikTok",
+      "url": "https://tiktok.com",
+      "category": "social",
+      "icon": "tiktok.svg",
+      "color": "#000000",
+      "description": "TikTok short videos"
+    },
+    {
+      "id": "snapchat",
+      "name": "Snapchat",
+      "url": "https://snapchat.com",
+      "category": "social",
+      "icon": "snapchat.svg",
+      "color": "#FFFC00",
+      "description": "Snapchat messaging"
+    },
+    {
+      "id": "pinterest",
+      "name": "Pinterest",
+      "url": "https://pinterest.com",
+      "category": "social",
+      "icon": "pinterest.svg",
+      "color": "#E60023",
+      "description": "Pinterest inspiration"
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "url": "https://reddit.com",
+      "category": "social",
+      "icon": "reddit.svg",
+      "color": "#FF4500",
+      "description": "Reddit community"
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook",
+      "url": "https://facebook.com",
+      "category": "social",
+      "icon": "facebook.svg",
+      "color": "#1877F2",
+      "description": "Facebook social network"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "url": "https://linkedin.com",
+      "category": "professional",
+      "icon": "linkedin.svg",
+      "color": "#0A66C2",
+      "description": "LinkedIn professional network"
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "url": "https://discord.com",
+      "category": "community",
+      "icon": "discord.svg",
+      "color": "#5865F2",
+      "description": "Discord voice/chat server"
+    },
+    {
+      "id": "steam",
+      "name": "Steam",
+      "url": "https://steampowered.com",
+      "category": "gaming",
+      "icon": "steam.svg",
+      "color": "#1B2838",
+      "description": "Steam gaming platform"
+    },
+    {
+      "id": "epic-games",
+      "name": "Epic Games",
+      "url": "https://epicgames.com",
+      "category": "gaming",
+      "icon": "epic-games.svg",
+      "color": "#313131",
+      "description": "Epic Games launcher"
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "url": "https://spotify.com",
+      "category": "music",
+      "icon": "spotify.svg",
+      "color": "#1DB954",
+      "description": "Spotify music streaming"
+    },
+    {
+      "id": "apple-music",
+      "name": "Apple Music",
+      "url": "https://music.apple.com",
+      "category": "music",
+      "icon": "apple-music.svg",
+      "color": "#FA243C",
+      "description": "Apple Music streaming"
+    },
+    {
+      "id": "soundcloud",
+      "name": "SoundCloud",
+      "url": "https://soundcloud.com",
+      "category": "music",
+      "icon": "soundcloud.svg",
+      "color": "#FF6600",
+      "description": "SoundCloud music platform"
+    },
+    {
+      "id": "patreon",
+      "name": "Patreon",
+      "url": "https://patreon.com",
+      "category": "support",
+      "icon": "patreon.svg",
+      "color": "#FF424D",
+      "description": "Patreon creator funding"
+    },
+    {
+      "id": "ko-fi",
+      "name": "Ko-fi",
+      "url": "https://ko-fi.com",
+      "category": "support",
+      "icon": "ko-fi.svg",
+      "color": "#13C3FF",
+      "description": "Ko-fi support platform"
+    },
+    {
+      "id": "buymeacoffee",
+      "name": "Buy Me a Coffee",
+      "url": "https://buymeacoffee.com",
+      "category": "support",
+      "icon": "buymeacoffee.svg",
+      "color": "#FFDD00",
+      "description": "Buy Me a Coffee support"
+    },
+    {
+      "id": "paypal",
+      "name": "PayPal",
+      "url": "https://paypal.com",
+      "category": "payment",
+      "icon": "paypal.svg",
+      "color": "#003087",
+      "description": "PayPal payment"
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "url": "https://stripe.com",
+      "category": "payment",
+      "icon": "stripe.svg",
+      "color": "#635BFF",
+      "description": "Stripe payment platform"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "url": "https://github.com",
+      "category": "professional",
+      "icon": "github.svg",
+      "color": "#181717",
+      "description": "GitHub code repository"
+    },
+    {
+      "id": "gitHub-sponsor",
+      "name": "GitHub Sponsors",
+      "url": "https://github.com/sponsors",
+      "category": "support",
+      "icon": "github-sponsor.svg",
+      "color": "#EA4AAA",
+      "description": "GitHub sponsorship program"
+    },
+    {
+      "id": "website",
+      "name": "Personal Website",
+      "url": "https://example.com",
+      "category": "professional",
+      "icon": "website.svg",
+      "color": "#0066FF",
+      "description": "Your personal website"
+    },
+    {
+      "id": "blog",
+      "name": "Blog",
+      "url": "https://blog.example.com",
+      "category": "professional",
+      "icon": "blog.svg",
+      "color": "#FF6B6B",
+      "description": "Personal blog"
+    },
+    {
+      "id": "email",
+      "name": "Email",
+      "url": "mailto:you@example.com",
+      "category": "contact",
+      "icon": "email.svg",
+      "color": "#EA4335",
+      "description": "Email contact"
+    },
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "url": "https://wa.me/1234567890",
+      "category": "contact",
+      "icon": "whatsapp.svg",
+      "color": "#25D366",
+      "description": "WhatsApp messaging"
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram",
+      "url": "https://t.me/username",
+      "category": "contact",
+      "icon": "telegram.svg",
+      "color": "#0088cc",
+      "description": "Telegram messaging"
+    },
+    {
+      "id": "medium",
+      "name": "Medium",
+      "url": "https://medium.com",
+      "category": "professional",
+      "icon": "medium.svg",
+      "color": "#000000",
+      "description": "Medium writing platform"
+    },
+    {
+      "id": "substack",
+      "name": "Substack",
+      "url": "https://substack.com",
+      "category": "professional",
+      "icon": "substack.svg",
+      "color": "#FF6D00",
+      "description": "Substack newsletter"
+    },
+    {
+      "id": "twitch-gaming",
+      "name": "Twitch Gaming",
+      "url": "https://twitch.tv/directory/all",
+      "category": "gaming",
+      "icon": "twitch-gaming.svg",
+      "color": "#9146FF",
+      "description": "Twitch gaming streams"
+    },
+    {
+      "id": "youtube-gaming",
+      "name": "YouTube Gaming",
+      "url": "https://youtube.com/gaming",
+      "category": "gaming",
+      "icon": "youtube-gaming.svg",
+      "color": "#FF0000",
+      "description": "YouTube gaming channel"
+    },
+    {
+      "id": "mixer",
+      "name": "Mixer",
+      "url": "https://mixer.com",
+      "category": "streaming",
+      "icon": "mixer.svg",
+      "color": "#0096FF",
+      "description": "Mixer streaming platform"
+    },
+    {
+      "id": "imdb",
+      "name": "IMDb",
+      "url": "https://imdb.com",
+      "category": "entertainment",
+      "icon": "imdb.svg",
+      "color": "#F5D547",
+      "description": "IMDb movie database"
+    },
+    {
+      "id": "letterboxd",
+      "name": "Letterboxd",
+      "url": "https://letterboxd.com",
+      "category": "entertainment",
+      "icon": "letterboxd.svg",
+      "color": "#00D235",
+      "description": "Letterboxd film tracking"
+    },
+    {
+      "id": "goodreads",
+      "name": "Goodreads",
+      "url": "https://goodreads.com",
+      "category": "entertainment",
+      "icon": "goodreads.svg",
+      "color": "#372213",
+      "description": "Goodreads book tracking"
+    },
+    {
+      "id": "itch-io",
+      "name": "itch.io",
+      "url": "https://itch.io",
+      "category": "gaming",
+      "icon": "itch-io.svg",
+      "color": "#FA5C5C",
+      "description": "itch.io indie games"
+    },
+    {
+      "id": "gumroad",
+      "name": "Gumroad",
+      "url": "https://gumroad.com",
+      "category": "shop",
+      "icon": "gumroad.svg",
+      "color": "#36454F",
+      "description": "Gumroad digital shop"
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "url": "https://shopify.com",
+      "category": "shop",
+      "icon": "shopify.svg",
+      "color": "#96BE39",
+      "description": "Shopify store"
+    },
+    {
+      "id": "etsy",
+      "name": "Etsy",
+      "url": "https://etsy.com",
+      "category": "shop",
+      "icon": "etsy.svg",
+      "color": "#F1641E",
+      "description": "Etsy marketplace"
+    },
+    {
+      "id": "behance",
+      "name": "Behance",
+      "url": "https://behance.net",
+      "category": "professional",
+      "icon": "behance.svg",
+      "color": "#053EFF",
+      "description": "Behance portfolio"
+    },
+    {
+      "id": "dribbble",
+      "name": "Dribbble",
+      "url": "https://dribbble.com",
+      "category": "professional",
+      "icon": "dribbble.svg",
+      "color": "#EA699C",
+      "description": "Dribbble design community"
+    },
+    {
+      "id": "artstation",
+      "name": "ArtStation",
+      "url": "https://artstation.com",
+      "category": "professional",
+      "icon": "artstation.svg",
+      "color": "#13AFF0",
+      "description": "ArtStation art platform"
+    },
+    {
+      "id": "deviantart",
+      "name": "DeviantArt",
+      "url": "https://deviantart.com",
+      "category": "professional",
+      "icon": "deviantart.svg",
+      "color": "#05CC47",
+      "description": "DeviantArt art community"
+    },
+    {
+      "id": "tumblr",
+      "name": "Tumblr",
+      "url": "https://tumblr.com",
+      "category": "social",
+      "icon": "tumblr.svg",
+      "color": "#36465D",
+      "description": "Tumblr blogging"
+    },
+    {
+      "id": "vimeo",
+      "name": "Vimeo",
+      "url": "https://vimeo.com",
+      "category": "video",
+      "icon": "vimeo.svg",
+      "color": "#1AB7EA",
+      "description": "Vimeo video platform"
+    },
+    {
+      "id": "dailymotion",
+      "name": "Dailymotion",
+      "url": "https://dailymotion.com",
+      "category": "video",
+      "icon": "dailymotion.svg",
+      "color": "#0066FF",
+      "description": "Dailymotion video platform"
+    },
+    {
+      "id": "twitch-clips",
+      "name": "Twitch Clips",
+      "url": "https://twitch.tv/directory/all/clips",
+      "category": "streaming",
+      "icon": "twitch.svg",
+      "color": "#9146FF",
+      "description": "Twitch clip collection"
+    },
+    {
+      "id": "rumble",
+      "name": "Rumble",
+      "url": "https://rumble.com",
+      "category": "video",
+      "icon": "rumble.svg",
+      "color": "#11B000",
+      "description": "Rumble video platform"
+    },
+    {
+      "id": "minds",
+      "name": "Minds",
+      "url": "https://minds.com",
+      "category": "social",
+      "icon": "minds.svg",
+      "color": "#0096FF",
+      "description": "Minds social network"
+    },
+    {
+      "id": "mastodon",
+      "name": "Mastodon",
+      "url": "https://mastodon.social",
+      "category": "social",
+      "icon": "mastodon.svg",
+      "color": "#563ACC",
+      "description": "Mastodon social network"
+    },
+    {
+      "id": "bluesky",
+      "name": "Bluesky",
+      "url": "https://bsky.app",
+      "category": "social",
+      "icon": "bluesky.svg",
+      "color": "#1185FE",
+      "description": "Bluesky social network"
+    },
+    {
+      "id": "threads",
+      "name": "Threads",
+      "url": "https://threads.net",
+      "category": "social",
+      "icon": "threads.svg",
+      "color": "#000000",
+      "description": "Threads social network"
+    },
+    {
+      "id": "linktree",
+      "name": "Linktree",
+      "url": "https://linktree.com",
+      "category": "reference",
+      "icon": "linktree.svg",
+      "color": "#39E09B",
+      "description": "Linktree reference"
+    }
+  ],
+  "categories": {
+    "social": "Social Media",
+    "streaming": "Live Streaming",
+    "video": "Video Platforms",
+    "gaming": "Gaming Platforms",
+    "music": "Music & Audio",
+    "professional": "Professional",
+    "support": "Support & Funding",
+    "payment": "Payment Methods",
+    "community": "Community",
+    "contact": "Contact",
+    "shop": "Shopping",
+    "entertainment": "Entertainment",
+    "reference": "Reference"
+  }
+}

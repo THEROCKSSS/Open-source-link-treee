@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌐 Futuristic Link Tree - Template Selector</title>
+  <link rel="stylesheet" href="shared/fonts.css">
+  <link rel="stylesheet" href="shared/animations.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #00F0FF;
+      --secondary: #9D00FF;
+      --accent: #FF006E;
+      --dark-bg: #0A0E27;
+      --light-text: #E8E8FF;
+      --card-bg: rgba(15, 20, 50, 0.8);
+    }
+
+    body {
+      font-family: var(--font-modern);
+      background: linear-gradient(135deg, var(--dark-bg) 0%, #1a1a3e 50%, #0d0d25 100%);
+      color: var(--light-text);
+      min-height: 100vh;
+      padding: 40px 20px;
+      overflow-x: hidden;
+    }
+
+    /* Animated background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(0, 240, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(157, 0, 255, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 1;
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+      animation: slideInDown 0.8s var(--ease-smooth);
+    }
+
+    .logo {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+      text-shadow: 0 0 30px rgba(0, 240, 255, 0.3);
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: rgba(232, 232, 255, 0.7);
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: rgba(232, 232, 255, 0.6);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: rgba(232, 232, 255, 0.6);
+      margin-top: 5px;
+    }
+
+    .templates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .template-card {
+      background: linear-gradient(135deg, rgba(15, 20, 50, 0.9), rgba(30, 20, 60, 0.9));
+      border: 2px solid rgba(0, 240, 255, 0.2);
+      border-radius: 15px;
+      padding: 30px;
+      cursor: pointer;
+      transition: all 0.3s var(--ease-smooth);
+      position: relative;
+      overflow: hidden;
+      animation: slideInUp 0.6s var(--ease-smooth) backwards;
+    }
+
+    .template-card:nth-child(1) { animation-delay: 0.1s; }
+    .template-card:nth-child(2) { animation-delay: 0.2s; }
+    .template-card:nth-child(3) { animation-delay: 0.3s; }
+    .template-card:nth-child(4) { animation-delay: 0.4s; }
+    .template-card:nth-child(5) { animation-delay: 0.5s; }
+    .template-card:nth-child(6) { animation-delay: 0.6s; }
+
+    .template-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, rgba(0, 240, 255, 0.1), transparent);
+      transform: rotate(45deg);
+      animation: shimmer 3s infinite;
+    }
+
+    .template-card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 0 30px rgba(0, 240, 255, 0.5),
+                  inset 0 0 30px rgba(0, 240, 255, 0.1);
+      transform: translateY(-10px);
+    }
+
+    .template-card-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .template-icon {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .template-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+
+    .template-type {
+      font-size: 0.9rem;
+      color: var(--secondary);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .template-description {
+      font-size: 0.95rem;
+      color: rgba(232, 232, 255, 0.7);
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .template-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(0, 240, 255, 0.15);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      border: 1px solid rgba(0, 240, 255, 0.3);
+    }
+
+    .template-features {
+      font-size: 0.85rem;
+      color: rgba(232, 232, 255, 0.6);
+      margin-bottom: 15px;
+    }
+
+    .template-features li {
+      margin-left: 20px;
+      margin-bottom: 5px;
+    }
+
+    .template-action {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-family: var(--font-modern);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s var(--ease-smooth);
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #000;
+      border: 2px solid var(--primary);
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 0 30px rgba(0, 240, 255, 0.6);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(0, 240, 255, 0.1);
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+    }
+
+    .guide {
+      background: linear-gradient(135deg, rgba(15, 20, 50, 0.95), rgba(30, 20, 60, 0.95));
+      border: 2px solid rgba(157, 0, 255, 0.3);
+      border-radius: 15px;
+      padding: 40px;
+      margin-bottom: 40px;
+      animation: slideInUp 0.8s var(--ease-smooth);
+    }
+
+    .guide h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--secondary);
+    }
+
+    .guide ol {
+      list-style-position: inside;
+      color: rgba(232, 232, 255, 0.8);
+      line-height: 2;
+    }
+
+    .guide li {
+      margin-bottom: 15px;
+      font-size: 1.05rem;
+    }
+
+    .guide code {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: var(--primary);
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+    }
+
+    .footer {
+      text-align: center;
+      color: rgba(232, 232, 255, 0.5);
+      font-size: 0.9rem;
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(0, 240, 255, 0.1);
+    }
+
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .footer a:hover {
+      color: var(--secondary);
+      text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .templates-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .guide {
+        padding: 20px;
+      }
+
+      .stats {
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">🌐</div>
+      <h1>Futuristic Link Tree</h1>
+      <p class="subtitle">Multi-Template Platform • VR Ready • GitHub Deployable</p>
+      <p class="description">
+        Create stunning link aggregation pages with futuristic designs. Perfect for VR Chat, gaming, content creators, and more.
+      </p>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Templates</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Platform Icons</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">0</div>
+          <div class="stat-label">Dependencies</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Quick Start Guide -->
+    <section class="guide">
+      <h2>⚡ Quick Start</h2>
+      <ol>
+        <li>Choose a template below</li>
+        <li>Copy the <code>config-example.json</code> file</li>
+        <li>Rename it to <code>config.json</code></li>
+        <li>Edit with your information and links</li>
+        <li>Open the template's <code>index.html</code> in a browser</li>
+        <li>Push to GitHub and enable Pages</li>
+      </ol>
+    </section>
+
+    <!-- Templates Grid -->
+    <section class="templates-grid">
+      <!-- VR Chat Dimension -->
+      <div class="template-card">
+        <div class="template-card-content">
+          <div class="template-icon">🚀</div>
+          <div class="template-name">VR Chat Dimension</div>
+          <div class="template-type">Cyberpunk • Holographic</div>
+          <p class="template-description">
+            Futuristic holographic design with neon cyan and purple. Perfect for VR Chat profiles and metaverse presence.
+          </p>
+          <div class="template-tags">
+            <span class="tag">Cyan Neon</span>
+            <span class="tag">3D Effects</span>
+            <span class="tag">VR Optimized</span>
+          </div>
+          <ul class="template-features">
+            <li>✓ Glowing holographic cards</li>
+            <li>✓ 3D perspective transforms</li>
+            <li>✓ Particle animations</li>
+            <li>✓ Portal effects</li>
+          </ul>
+          <div class="template-action">
+            <a href="templates/vrchat-dimension/index.html" class="btn btn-primary">Preview</a>
+            <a href="#" class="btn btn-secondary" onclick="showGuide('vrchat')">Setup</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Basic Clean -->
+      <div class="template-card">
+        <div class="template-card-content">
+          <div class="template-icon">📋</div>
+          <div class="template-name">Basic Clean</div>
+          <div class="template-type">Professional • Minimalist</div>
+          <p class="template-description">
+            Simple and elegant. Perfect for professionals, portfolios, and those who want straightforward functionality.
+          </p>
+          <div class="template-tags">
+            <span class="tag">Accessible</span>
+            <span class="tag">Fast</span>
+            <span class="tag">Mobile-First</span>
+          </div>
+          <ul class="template-features">
+            <li>✓ Clean typography</li>
+            <li>✓ Fast load times</li>
+            <li>✓ Mobile responsive</li>
+            <li>✓ WCAG accessible</li>
+          </ul>
+          <div class="template-action">
+            <a href="templates/basic-clean/index.html" class="btn btn-primary">Preview</a>
+            <a href="#" class="btn btn-secondary" onclick="showGuide('basic')">Setup</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hacker Terminal -->
+      <div class="template-card">
+        <div class="template-card-content">
+          <div class="template-icon">💻</div>
+          <div class="template-name">Hacker Terminal</div>
+          <div class="template-type">Terminal • Matrix Aesthetic</div>
+          <p class="template-description">
+            Command-line interface style with Matrix rain effect. ASCII art meets futurism. For developers and tech enthusiasts.
+          </p>
+          <div class="template-tags">
+            <span class="tag">Terminal Green</span>
+            <span class="tag">ASCII Art</span>
+            <span class="tag">Typewriter</span>
+          </div>
+          <ul class="template-features">
+            <li>✓ Terminal styling</li>
+            <li>✓ Matrix rain background</li>
+            <li>✓ Typewriter animations</li>
+            <li>✓ Boot sequence effect</li>
+          </ul>
+          <div class="template-action">
+            <a href="templates/hacker-terminal/index.html" class="btn btn-primary">Preview</a>
+            <a href="#" class="btn btn-secondary" onclick="showGuide('hacker')">Setup</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gaming Esports -->
+      <div class="template-card">
+        <div class="template-card-content">
+          <div class="template-icon">🎮</div>
+          <div class="template-name">Gaming Esports</div>
+          <div class="template-type">Gaming • Tournament Style</div>
+          <p class="template-description">
+            Bold aggressive design with RGB effects. Tournament-ready with rank displays and score systems.
+          </p>
+          <div class="template-tags">
+            <span class="tag">RGB Lighting</span>
+            <span class="tag">Hexagons</span>
+            <span class="tag">High Energy</span>
+          </div>
+          <ul class="template-features">
+            <li>✓ RGB color shifting</li>
+            <li>✓ Hexagonal buttons</li>
+            <li>✓ Rank badges</li>
+            <li>✓ Pulsing animations</li>
+          </ul>
+          <div class="template-action">
+            <a href="templates/gaming-esports/index.html" class="btn btn-primary">Preview</a>
+            <a href="#" class="btn btn-secondary" onclick="showGuide('gaming')">Setup</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cosmic Nebula -->
+      <div class="template-card">
+        <div class="template-card-content">
+          <div class="template-icon">🌌</div>
+          <div class="template-name">Cosmic Nebula</div>
+          <div class="template-type">Space • Sci-Fi</div>
+          <p class="template-description">
+            Deep space aesthetic with nebula gradients. Floating organic shapes and constellation connections.
+          </p>
+          <div class="template-tags">
+            <span class="tag">Starfield</span>
+            <span class="tag">Organic Shapes</span>
+            <span class="tag">Aurora Effects</span>
+          </div>
+          <ul class="template-features">
+            <li>✓ Animated starfield</li>
+            <li>✓ Floating elements</li>
+            <li>✓ Nebula gradients</li>
+            <li>✓ Particle system</li>
+          </ul>
+          <div class="template-action">
+            <a href="templates/cosmic-nebula/index.html" class="btn btn-primary">Preview</a>
+            <a href="#" class="btn btn-secondary" onclick="showGuide('cosmic')">Setup</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Synthwave Retro -->
+      <div class="template-card">
+        <div class="template-card-content">
+          <div class="template-icon">🕹️</div>
+          <div class="template-name">Synthwave Retro</div>
+          <div class="template-type">Retro • 80s/90s</div>
+          <p class="template-description">
+            Nostalgic synthwave vibes with vaporwave aesthetics. Pixel art, VHS effects, and retro gaming energy.
+          </p>
+          <div class="template-tags">
+            <span class="tag">Pixel Art</span>
+            <span class="tag">VHS Effect</span>
+            <span class="tag">Grid Floor</span>
+          </div>
+          <ul class="template-features">
+            <li>✓ Pixel perfect design</li>
+            <li>✓ Scanline effects</li>
+            <li>✓ Perspective grid</li>
+            <li>✓ Glitch animations</li>
+          </ul>
+          <div class="template-action">
+            <a href="templates/synthwave-retro/index.html" class="btn btn-primary">Preview</a>
+            <a href="#" class="btn btn-secondary" onclick="showGuide('synthwave')">Setup</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="guide" style="margin-top: 60px;">
+      <h2>✨ Features Included</h2>
+      <ul style="list-style: none;">
+        <li style="margin-bottom: 15px;">✅ <strong>No Build Process:</strong> Pure HTML, CSS, and JavaScript</li>
+        <li style="margin-bottom: 15px;">✅ <strong>GitHub Pages Ready:</strong> Deploy directly from repository</li>
+        <li style="margin-bottom: 15px;">✅ <strong>50+ Platform Icons:</strong> Twitter, YouTube, Twitch, Discord, and more</li>
+        <li style="margin-bottom: 15px;">✅ <strong>VR Optimized:</strong> Works in VR Chat WebView and VR headsets</li>
+        <li style="margin-bottom: 15px;">✅ <strong>Fully Responsive:</strong> Desktop, tablet, mobile, and VR displays</li>
+        <li style="margin-bottom: 15px;">✅ <strong>Customizable:</strong> Easy JSON configuration system</li>
+        <li style="margin-bottom: 15px;">✅ <strong>Performance:</strong> Loads in under 2 seconds, 60 FPS animations</li>
+        <li style="margin-bottom: 15px;">✅ <strong>Accessible:</strong> WCAG 2.1 AA compliant (Basic template)</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>🌐 Futuristic Link Tree • <a href="README.md" target="_blank">Documentation</a> • <a href="DEVELOPMENT_PLAN.md" target="_blank">Development Guide</a></p>
+      <p style="margin-top: 15px;">Built with ❤️ for creators, gamers, and developers</p>
+      <p style="margin-top: 15px; font-size: 0.8rem;">MIT License • Open Source • GitHub Deployable</p>
+    </footer>
+  </div>
+
+  <script src="shared/utils.js"></script>
+  <script>
+    function showGuide(template) {
+      alert(`Setup guide for ${template}:\n\n1. Go to templates/${template}/\n2. Copy config-example.json\n3. Rename to config.json\n4. Edit with your info\n5. Open index.html in browser\n\nSee README.md for detailed instructions.`);
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('🌐 Futuristic Link Tree loaded!');
+      console.log('📚 Read README.md for setup instructions');
+    });
+  </script>
+</body>
+</html>

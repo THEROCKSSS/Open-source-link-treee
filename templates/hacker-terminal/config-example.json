@@ -1,0 +1,65 @@
+{
+  "profileName": "ELITE_HACKER",
+  "bio": "Welcome to my terminal. Execute commands to access my profiles.",
+  "profileImage": "https://via.placeholder.com/200",
+  
+  "links": [
+    {
+      "title": "GitHub Repository",
+      "platform": "github",
+      "url": "https://github.com/yourusername",
+      "category": "professional",
+      "command": "cd /github"
+    },
+    {
+      "title": "Security Research",
+      "platform": "website",
+      "url": "https://security.yoursite.com",
+      "category": "professional",
+      "command": "cat /security"
+    },
+    {
+      "title": "Twitter Feed",
+      "platform": "twitter",
+      "url": "https://twitter.com/yourusername",
+      "category": "social",
+      "command": "stream twitter"
+    },
+    {
+      "title": "Discord Server",
+      "platform": "discord",
+      "url": "https://discord.gg/yourserver",
+      "category": "community",
+      "command": "connect discord"
+    },
+    {
+      "title": "Twitch Channel",
+      "platform": "twitch",
+      "url": "https://twitch.tv/yourusername",
+      "category": "streaming",
+      "command": "stream live"
+    },
+    {
+      "title": "Email Contact",
+      "platform": "email",
+      "url": "mailto:your@email.com",
+      "category": "contact",
+      "command": "mail"
+    }
+  ],
+  
+  "customization": {
+    "primaryColor": "#00FF41",
+    "secondaryColor": "#0BFF00",
+    "accentColor": "#FF0000",
+    "backgroundColor": "#000000",
+    "textColor": "#00FF41",
+    "animationsEnabled": true,
+    "glitchEffect": true,
+    "scanlines": true,
+    "bootSequence": true
+  },
+  
+  "template": "hacker-terminal",
+  "theme": "dark"
+}

@@ -1,0 +1,70 @@
+{
+  "profileName": "Your Username",
+  "bio": "Welcome to my VR Chat profile link tree! Connect with me across the metaverse.",
+  "profileImage": "https://via.placeholder.com/200",
+  
+  "links": [
+    {
+      "title": "VR Chat Profile",
+      "platform": "vrchat",
+      "url": "https://vrchat.com",
+      "category": "gaming"
+    },
+    {
+      "title": "Follow on Twitter",
+      "platform": "twitter",
+      "url": "https://twitter.com/yourusername",
+      "category": "social"
+    },
+    {
+      "title": "Subscribe on YouTube",
+      "platform": "youtube",
+      "url": "https://youtube.com/@yourusername",
+      "category": "video"
+    },
+    {
+      "title": "Join Discord",
+      "platform": "discord",
+      "url": "https://discord.gg/yourserver",
+      "category": "community"
+    },
+    {
+      "title": "Watch My Streams",
+      "platform": "twitch",
+      "url": "https://twitch.tv/yourusername",
+      "category": "streaming"
+    },
+    {
+      "title": "Support Me",
+      "platform": "ko-fi",
+      "url": "https://ko-fi.com/yourusername",
+      "category": "support"
+    },
+    {
+      "title": "Instagram",
+      "platform": "instagram",
+      "url": "https://instagram.com/yourusername",
+      "category": "social"
+    },
+    {
+      "title": "Contact Email",
+      "platform": "email",
+      "url": "mailto:your@email.com",
+      "category": "contact"
+    }
+  ],
+  
+  "customization": {
+    "primaryColor": "#00F0FF",
+    "secondaryColor": "#9D00FF",
+    "accentColor": "#FF006E",
+    "backgroundColor": "#0A0E27",
+    "textColor": "#E8E8FF",
+    "animationsEnabled": true,
+    "particlesEnabled": true,
+    "glowIntensity": 0.8
+  },
+  
+  "template": "vrchat-dimension",
+  "theme": "dark"
+}

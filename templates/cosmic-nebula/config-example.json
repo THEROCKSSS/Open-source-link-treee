@@ -1,0 +1,73 @@
+{
+  "profileName": "Cosmic Traveler",
+  "bio": "Exploring the cosmos of possibilities. Follow me on my cosmic journey.",
+  "profileImage": "https://via.placeholder.com/200",
+  
+  "links": [
+    {
+      "title": "YouTube Channel",
+      "platform": "youtube",
+      "url": "https://youtube.com/@yourusername",
+      "category": "video",
+      "icon": "star"
+    },
+    {
+      "title": "Twitter Universe",
+      "platform": "twitter",
+      "url": "https://twitter.com/yourusername",
+      "category": "social",
+      "icon": "satellite"
+    },
+    {
+      "title": "Twitch Galaxy",
+      "platform": "twitch",
+      "url": "https://twitch.tv/yourusername",
+      "category": "streaming",
+      "icon": "nebula"
+    },
+    {
+      "title": "Discord Dimension",
+      "platform": "discord",
+      "url": "https://discord.gg/yourserver",
+      "category": "community",
+      "icon": "planet"
+    },
+    {
+      "title": "Spotify Soundtrack",
+      "platform": "spotify",
+      "url": "https://open.spotify.com/user/yourusername",
+      "category": "music",
+      "icon": "moon"
+    },
+    {
+      "title": "GitHub Exploration",
+      "platform": "github",
+      "url": "https://github.com/yourusername",
+      "category": "professional",
+      "icon": "comet"
+    },
+    {
+      "title": "Ko-fi Support",
+      "platform": "ko-fi",
+      "url": "https://ko-fi.com/yourusername",
+      "category": "support",
+      "icon": "supernova"
+    }
+  ],
+  
+  "customization": {
+    "primaryColor": "#1D3557",
+    "secondaryColor": "#9D84B7",
+    "accentColor": "#E63946",
+    "glowColor": "#06D6A0",
+    "backgroundColor": "#0A0E1E",
+    "textColor": "#F1FAEE",
+    "animationsEnabled": true,
+    "particleIntensity": 0.7,
+    "floatingAnimation": true,
+    "constellationMode": true
+  },
+  
+  "template": "cosmic-nebula",
+  "theme": "dark"
+}

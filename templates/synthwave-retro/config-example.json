@@ -1,0 +1,67 @@
+{
+  "profileName": "SYNTHWAVE VIBES",
+  "bio": "Retro-futuristic. 80s aesthetic. Welcome to the digital frontier.",
+  "profileImage": "https://via.placeholder.com/200",
+  
+  "links": [
+    {
+      "title": "YouTube Channel",
+      "platform": "youtube",
+      "url": "https://youtube.com/@yourusername",
+      "category": "video"
+    },
+    {
+      "title": "Twitch Stream",
+      "platform": "twitch",
+      "url": "https://twitch.tv/yourusername",
+      "category": "streaming"
+    },
+    {
+      "title": "Twitter",
+      "platform": "twitter",
+      "url": "https://twitter.com/yourusername",
+      "category": "social"
+    },
+    {
+      "title": "Discord",
+      "platform": "discord",
+      "url": "https://discord.gg/yourserver",
+      "category": "community"
+    },
+    {
+      "title": "Spotify Playlist",
+      "platform": "spotify",
+      "url": "https://open.spotify.com/user/yourusername",
+      "category": "music"
+    },
+    {
+      "title": "Instagram",
+      "platform": "instagram",
+      "url": "https://instagram.com/yourusername",
+      "category": "social"
+    },
+    {
+      "title": "Ko-fi Support",
+      "platform": "ko-fi",
+      "url": "https://ko-fi.com/yourusername",
+      "category": "support"
+    }
+  ],
+  
+  "customization": {
+    "primaryColor": "#FF10F0",
+    "secondaryColor": "#00F7FF",
+    "accentColor": "#FFFF00",
+    "backgroundColor": "#2D0A4E",
+    "neonPurple": "#C239B3",
+    "textColor": "#FFFF00",
+    "animationsEnabled": true,
+    "pixelArt": true,
+    "scanlineEffect": true,
+    "glitchEffect": true,
+    "gridBackground": true
+  },
+  
+  "template": "synthwave-retro",
+  "theme": "dark"
+}

@@ -1,0 +1,51 @@
+{
+  "profileName": "Your Name",
+  "bio": "Simple, clean, and professional. Find all my important links here.",
+  "profileImage": "https://via.placeholder.com/200",
+  
+  "links": [
+    {
+      "title": "Personal Website",
+      "platform": "website",
+      "url": "https://yourwebsite.com",
+      "category": "professional"
+    },
+    {
+      "title": "GitHub",
+      "platform": "github",
+      "url": "https://github.com/yourusername",
+      "category": "professional"
+    },
+    {
+      "title": "LinkedIn",
+      "platform": "linkedin",
+      "url": "https://linkedin.com/in/yourusername",
+      "category": "professional"
+    },
+    {
+      "title": "Twitter",
+      "platform": "twitter",
+      "url": "https://twitter.com/yourusername",
+      "category": "social"
+    },
+    {
+      "title": "Email",
+      "platform": "email",
+      "url": "mailto:your@email.com",
+      "category": "contact"
+    }
+  ],
+  
+  "customization": {
+    "primaryColor": "#4A90E2",
+    "secondaryColor": "#F5F5F5",
+    "accentColor": "#2C3E50",
+    "backgroundColor": "#FFFFFF",
+    "textColor": "#34495E",
+    "animationsEnabled": true,
+    "particlesEnabled": false
+  },
+  
+  "template": "basic-clean",
+  "theme": "light"
+}

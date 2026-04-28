@@ -1,0 +1,133 @@
+/**
+ * Shared Fonts Library
+ * Web font imports for all templates
+ */
+
+/* ===== GOOGLE FONTS IMPORTS ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap');
+
+/* ===== FONT FAMILY DEFINITIONS ===== */
+
+:root {
+  /* Modern/Clean */
+  --font-modern: 'Inter', sans-serif;
+  
+  /* Terminal/Code */
+  --font-mono: 'Space Mono', monospace;
+  --font-code: 'JetBrains Mono', monospace;
+  
+  /* Gaming/Futuristic */
+  --font-gaming: 'Orbitron', sans-serif;
+  --font-cyber: 'Audiowide', sans-serif;
+  
+  /* Retro */
+  --font-retro: 'Courier Prime', monospace;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  
+  /* Line Heights */
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.75;
+  
+  /* Letter Spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.05em;
+  --tracking-wider: 0.1em;
+  --tracking-widest: 0.15em;
+}
+
+/* ===== FONT FACE DEFINITIONS ===== */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHAPMtMeskuUIZEMwqO59Is33mWTKg.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('https://fonts.gstatic.com/s/spacemono/v6/i7dMIFZifjKcf5UAWdDyxsKjQai8.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('https://fonts.gstatic.com/s/orbitron/v21/yMJRMIlzdpvBhQQL_SC3X9yhF25-T1DIEjeYy-e9IVo.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Audiowide';
+  src: url('https://fonts.gstatic.com/s/audiowide/v13/l7g4T-1QVOAZhFQSwWe4DHpJ7AJi7PzqYcN-zHBx7js.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ===== UTILITY CLASSES ===== */
+
+.font-modern {
+  font-family: var(--font-modern);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-code {
+  font-family: var(--font-code);
+}
+
+.font-gaming {
+  font-family: var(--font-gaming);
+}
+
+.font-cyber {
+  font-family: var(--font-cyber);
+}
+
+.font-retro {
+  font-family: var(--font-retro);
+}
+
+/* Font sizes */
+.text-xs { font-size: var(--text-xs); }
+.text-sm { font-size: var(--text-sm); }
+.text-base { font-size: var(--text-base); }
+.text-lg { font-size: var(--text-lg); }
+.text-xl { font-size: var(--text-xl); }
+.text-2xl { font-size: var(--text-2xl); }
+.text-3xl { font-size: var(--text-3xl); }
+.text-4xl { font-size: var(--text-4xl); }
+.text-5xl { font-size: var(--text-5xl); }
+
+/* Line heights */
+.lh-tight { line-height: var(--lh-tight); }
+.lh-normal { line-height: var(--lh-normal); }
+.lh-relaxed { line-height: var(--lh-relaxed); }
+
+/* Letter spacing */
+.tracking-tight { letter-spacing: var(--tracking-tight); }
+.tracking-normal { letter-spacing: var(--tracking-normal); }
+.tracking-wide { letter-spacing: var(--tracking-wide); }
+.tracking-wider { letter-spacing: var(--tracking-wider); }
+.tracking-widest { letter-spacing: var(--tracking-widest); }

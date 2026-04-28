@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "projectName": "Futuristic Link Tree",
+  "description": "Multi-template link tree platform with futuristic designs",
+  "author": "Your Name",
+  "defaultTemplate": "basic-clean",
+  "templateOptions": [
+    "basic-clean",
+    "vrchat-dimension",
+    "hacker-terminal",
+    "gaming-esports",
+    "cosmic-nebula",
+    "synthwave-retro"
+  ],
+  "features": {
+    "animationsEnabled": true,
+    "responsiveDesign": true,
+    "vrOptimized": true,
+    "darkMode": true,
+    "customizationEnabled": true,
+    "iconSupport": true
+  },
+  "deployment": {
+    "githubPages": true,
+    "requiresBuild": false,
+    "staticOnly": true
+  },
+  "performance": {
+    "targetLoadTime": "< 2 seconds",
+    "targetFirstPaint": "< 1 second",
+    "targetAnimationFPS": 60
+  }
+}

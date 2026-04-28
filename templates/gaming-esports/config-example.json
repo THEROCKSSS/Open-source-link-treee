@@ -1,0 +1,72 @@
+{
+  "profileName": "ESPORTS_LEGEND",
+  "bio": "Competitive gaming. High performance. Rise to the top.",
+  "profileImage": "https://via.placeholder.com/200",
+  
+  "links": [
+    {
+      "title": "Twitch Stream",
+      "platform": "twitch",
+      "url": "https://twitch.tv/yourusername",
+      "category": "streaming",
+      "rank": "S-Tier"
+    },
+    {
+      "title": "YouTube Gaming",
+      "platform": "youtube",
+      "url": "https://youtube.com/@yourusername",
+      "category": "video",
+      "rank": "A-Tier"
+    },
+    {
+      "title": "Twitter",
+      "platform": "twitter",
+      "url": "https://twitter.com/yourusername",
+      "category": "social",
+      "rank": "S-Tier"
+    },
+    {
+      "title": "Discord Community",
+      "platform": "discord",
+      "url": "https://discord.gg/yourserver",
+      "category": "community",
+      "rank": "S-Tier"
+    },
+    {
+      "title": "Steam Profile",
+      "platform": "steam",
+      "url": "https://steamcommunity.com/id/yourusername",
+      "category": "gaming",
+      "rank": "S-Tier"
+    },
+    {
+      "title": "Patreon Support",
+      "platform": "patreon",
+      "url": "https://patreon.com/yourusername",
+      "category": "support",
+      "rank": "A-Tier"
+    },
+    {
+      "title": "Instagram",
+      "platform": "instagram",
+      "url": "https://instagram.com/yourusername",
+      "category": "social",
+      "rank": "B-Tier"
+    }
+  ],
+  
+  "customization": {
+    "primaryColor": "#FF0040",
+    "secondaryColor": "#B000FF",
+    "accentColor": "#FF6B00",
+    "backgroundColor": "#1A1A1A",
+    "textColor": "#FFFFFF",
+    "animationsEnabled": true,
+    "rgbEffect": true,
+    "pulseIntensity": 0.9,
+    "showRanking": true
+  },
+  
+  "template": "gaming-esports",
+  "theme": "dark"
+}
